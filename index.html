@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>IP Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calculadora IP e Calculadora de sumarização de redes">
+    <meta name="author" content="Tonin De Rosso Bolzan <tonybolzan.com>">
+
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body {
+        padding-top: 60px;
+      }
+      .form-horizontal .control-group {
+        margin-bottom: 0;
+      }
+      .form-horizontal .control-label {
+        width: 70px;
+      }
+      .form-horizontal .controls {
+        margin-left: 90px;
+      }
+      .input-medium {
+        width: 110px;
+      }
+      .alert {
+        padding: 4px 10px;
+      }
+    </style>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+    <![endif]-->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="ico/favicon.png">
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">IP Calculator</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Calculator</a></li>
+              <li><a href="#about">About</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="row-fluid">
+        <div class="span6">
+
+          <div class="well well-small form-horizontal">
+            <div class="control-group">
+              <label class="control-label" for="Address1">Address</label>
+              <div class="controls">
+                <input class="input-medium" type="text" id="Address1">
+                <select class="span1">
+                  <option></option>
+                </select>
+                <span class="alert help-inline">11000000.10101000.00000000.00111100</span>
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="Netmask1">Netmask</label>
+              <div class="controls">
+                <input class="input-medium" type="text" id="Netmask1">
+                <select class="span1">
+                  <option></option>
+                </select>
+                <span class="alert help-inline"></span>
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="Wildcard1">Wildcard</label>
+              <div class="controls">
+                <input class="input-medium" type="text" id="Wildcard1">
+                <select class="span1">
+                  <option></option>
+                </select>
+                <span class="alert help-inline"></span>
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="Network1">Network</label>
+              <div class="controls">
+                <input class="input-medium" type="text" id="Network1">
+                <select class="span1">
+                  <option></option>
+                </select>
+                <span class="alert help-inline"></span>
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="Broadcast1">Broadcast</label>
+              <div class="controls">
+                <input class="input-medium" type="text" id="Broadcast1">
+                <select class="span1">
+                  <option></option>
+                </select>
+                <span class="alert help-inline"></span>
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="HostMin1">HostMin</label>
+              <div class="controls">
+                <input class="input-medium" type="text" id="HostMin1">
+                <select class="span1">
+                  <option></option>
+                </select>
+                <span class="alert help-inline"></span>
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="HostMax1">HostMax</label>
+              <div class="controls">
+                <input class="input-medium" type="text" id="HostMax1">
+                <select class="span1">
+                  <option></option>
+                </select>
+                <span class="alert help-inline"></span>
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="HostsNet1">HostsNet</label>
+              <div class="controls">
+                <input class="input-medium" type="text" id="HostsNet1">
+                <select class="span1">
+                  <option></option>
+                  <option>1</option>
+                  <option>2</option>
+                </select>
+                <span class="alert help-inline"></span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <!-- 
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+    <script src="js/jquery.meio.mask.min.js"></script>
+    -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
